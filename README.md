@@ -8,11 +8,11 @@ Repository ini berisi kumpulan laporan dan script praktikum mata kuliah **Algori
 
 | | |
 |---|---|
-| **Nama** | Aldin |
-| **NIM** | 09081001009 |
-| **Jurusan** | Sistem Komputer |
-| **Fakultas** | Ilmu Komputer |
-| **Universitas** | Sriwijaya |
+| **Nama** | sabil |
+| **NIM** | 2502016 |
+| **Jurusan** | teknik informatika |
+| **Fakultas** | teknik |
+| **Universitas** | poltek purbaya |
 
 ---
 
