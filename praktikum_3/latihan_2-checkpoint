@@ -1,0 +1,319 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "a29386d4-cfd7-4b31-aa8d-f1dcca671058",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Masukkan bilangan pertama:  12\n",
+      "Masukkan bilangan kedua:  16\n",
+      "Masukkan bilangan ketiga:  18\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Rata-rata dari ketiga bilangan adalah: 15.333333333333334\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = int(input(\"Masukkan bilangan pertama: \"))\n",
+    "b = int(input(\"Masukkan bilangan kedua: \"))\n",
+    "c = int(input(\"Masukkan bilangan ketiga: \"))\n",
+    "\n",
+    "rata_rata = (a + b + c) / 3\n",
+    "\n",
+    "print(\"Rata-rata dari ketiga bilangan adalah:\" ,rata_rata)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "e6ddb4d4-1860-48e0-ba63-57d7859af92e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "bilangan pertama X= 5 bilangan kedua Y= 10\n",
+      "Y = 10\n",
+      "bilangan terbesar\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = 5\n",
+    "y = 10\n",
+    "\n",
+    "print(\"bilangan pertama X= %d bilangan kedua Y= %d\" % (x, y))\n",
+    "\n",
+    "if x > y:\n",
+    "    print(\"X =\", x)\n",
+    "    print(\"bilangan terbesar\")\n",
+    "elif x < y:\n",
+    "    print(\"Y =\", y)\n",
+    "    print(\"bilangan terbesar\")\n",
+    "else:\n",
+    "    print(\"bilangannya sama yaitu\", x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "684dd793-bad8-460f-9ddf-2f3e11bfcbf5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "=== PROGRAM PENUKARAN NILAI DESIMAL ===\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Masukkan nilai desimal A:  75\n",
+      "Masukkan nilai desimal B:  50\n",
+      "Masukkan nilai desimal C:  65\n",
+      "Masukkan nilai desimal D:  70\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "[Kondisi Sebelum Ditukar]\n",
+      "A = 75.0\n",
+      "B = 50.0\n",
+      "C = 65.0\n",
+      "D = 70.0\n",
+      "\n",
+      "[Kondisi Setelah Ditukar (A, D, B, C)]\n",
+      "Nilai A baru : 75.0\n",
+      "Nilai B baru : 70.0\n",
+      "Nilai C baru : 50.0\n",
+      "Nilai D baru : 65.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"=== PROGRAM PENUKARAN NILAI DESIMAL ===\")\n",
+    "\n",
+    "# a. Input (Menggunakan float untuk bilangan desimal sembarang)\n",
+    "A = float(input(\"Masukkan nilai desimal A: \"))\n",
+    "B = float(input(\"Masukkan nilai desimal B: \"))\n",
+    "C = float(input(\"Masukkan nilai desimal C: \"))\n",
+    "D = float(input(\"Masukkan nilai desimal D: \"))\n",
+    "\n",
+    "print(\"\\n[Kondisi Sebelum Ditukar]\")\n",
+    "print(f\"A = {A}\")\n",
+    "print(f\"B = {B}\")\n",
+    "print(f\"C = {C}\")\n",
+    "print(f\"D = {D}\")\n",
+    "\n",
+    "A, B, C, D = A, D, B, C\n",
+    "\n",
+    "# c. Output\n",
+    "print(\"\\n[Kondisi Setelah Ditukar (A, D, B, C)]\")\n",
+    "print(f\"Nilai A baru : {A}\")\n",
+    "print(f\"Nilai B baru : {B}\")\n",
+    "print(f\"Nilai C baru : {C}\")\n",
+    "print(f\"Nilai D baru : {D}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "44820785-3587-4af6-a78b-6066dcbce347",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Umur Anda:  19\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Umur 19 dan kriteria yaitu Remaja\n"
+     ]
+    }
+   ],
+   "source": [
+    "umur = int(input(\"Umur Anda: \"))\n",
+    "\n",
+    "if umur <= 5:\n",
+    "    kriteria = \"Balita\"\n",
+    "elif umur <= 13:\n",
+    "    kriteria = \"Anak-anak\"\n",
+    "elif umur <= 25:\n",
+    "    kriteria = \"Remaja\"\n",
+    "elif umur <= 35:\n",
+    "    kriteria = \"Dewasa\"\n",
+    "elif umur <= 55:\n",
+    "    kriteria = \"Orang Tua\"\n",
+    "else:\n",
+    "    kriteria = \"Lansia\"\n",
+    "\n",
+    "print(\"Umur %d dan kriteria yaitu %s\" % (umur, kriteria))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "3a789a38-f153-4c19-b70c-08ffff3bb35e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Masukkan nilai:  80\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Kriteria B\n"
+     ]
+    }
+   ],
+   "source": [
+    "nilai = int(input(\"Masukkan nilai: \"))\n",
+    "\n",
+    "if nilai >= 88:\n",
+    "    print(\"Kriteria A\")\n",
+    "elif nilai >= 77:\n",
+    "    print(\"Kriteria B\")\n",
+    "elif nilai >= 60:\n",
+    "    print(\"Kriteria C\")\n",
+    "elif nilai >= 45:\n",
+    "    print(\"Kriteria D\")\n",
+    "else:\n",
+    "    print(\"Kriteria E\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "71ead81d-ad30-4056-854a-9695e6857960",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "x1 : 25\n",
+      "x2 : 50\n",
+      "x3 : 75\n",
+      "x4 : 100\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Jumlah Semua Bilangan = 250\n",
+      "kali Semua Bilangan = 9375000\n",
+      "jika ditambah 0.5 = 250.5\n",
+      "jika dikali 0.5 = 4687500.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "x1 = eval(input(\"x1 :\"))\n",
+    "x2 = eval(input(\"x2 :\"))\n",
+    "x3 = eval(input(\"x3 :\"))\n",
+    "x4 = eval(input(\"x4 :\"))\n",
+    "jumlah=x1+x2+x3+x4\n",
+    "kali=x1*x2*x3*x4\n",
+    "\"sesudah diinput datanya...\"\n",
+    "print(\"Jumlah Semua Bilangan =\", jumlah)\n",
+    "print(\"kali Semua Bilangan =\", kali)\n",
+    "jumlah = jumlah + 0.5\n",
+    "print(\"jika ditambah 0.5 =\", jumlah)\n",
+    "kali = kali * 0.5\n",
+    "print(\"jika dikali 0.5 =\", kali)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "f1324ec6-475d-4627-a503-d813d865a495",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Masukan Nilai :  75\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Kriteria C\n"
+     ]
+    }
+   ],
+   "source": [
+    "Nilai = int(input(\"Masukan Nilai : \"))\n",
+    "if Nilai >= 88:\n",
+    "    print(\"Kriteria A\")\n",
+    "elif 77 <= Nilai < 88:\n",
+    "    print(\"Kriteria B\")\n",
+    "elif 60 <= Nilai < 77:\n",
+    "    print(\"Kriteria C\")\n",
+    "elif 45 <= Nilai < 60:\n",
+    "    print(\"Kriteria D\")\n",
+    "else : \n",
+    "    print(\"Kriteria E\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "33947151-17a8-4b7c-9a8f-bc969d9b120c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
