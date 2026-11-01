@@ -1,0 +1,337 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "fcc6fbdf-596f-49a6-8223-0bc7f70386b3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Sembilan Lebih Besar Dari Angka Tujuh\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "#Kondisi if adalah kondisi yang akan dieksekusi oleh program jika bernilai benar atau TRUE\n",
+    "\n",
+    "nilai = 9\n",
+    "\n",
+    "#jika kondisi benar/TRUE maka program akan mengeksekusi perintah dibawahnya\n",
+    "\n",
+    "if(nilai > 7):\n",
+    "    print(\"Sembilan Lebih Besar Dari Angka Tujuh\") # Kondisi Benar, Dieksekusi\n",
+    "    \n",
+    "#jika kondisi salah/FALSE maka program tidak akan mengeksekusi perintah dibawahnya\n",
+    "\n",
+    "if(nilai > 10):\n",
+    "    print(\"Sembilan Lebih Besar Dari Angka Sepuluh\") # Kondisi Salah, Maka tidak tereksekusi"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "ce5f0c58-1de9-44d8-99fc-f1564d4e11a7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Maaf Anda Tidak Lulus\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "#Kondisi if else adalah jika kondisi bernilai TRUE maka akan dieksekusi pada if, tetapi jika bernilai FALSE maka akan dieksekusi kode pada else\n",
+    "\n",
+    "nilai = 3\n",
+    "\n",
+    "#Jika pernyataan pada if bernilai TRUE maka if akan dieksekusi, tetapi jika FALSE kode pada else yang akan dieksekusi.\n",
+    "\n",
+    "if(nilai > 7):\n",
+    "    print(\"Selamat Anda Lulus\")\n",
+    "else:\n",
+    "    print(\"Maaf Anda Tidak Lulus\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "a3bcb7c2-ed79-405b-b3ed-503b14f4627d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Saya akan libur\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "#Contoh penggunaan kondisi elif\n",
+    "\n",
+    "hari_ini = \"Minggu\"\n",
+    "\n",
+    "if(hari_ini == \"Senin\"):\n",
+    "    print(\"Saya akan kuliah\")\n",
+    "elif(hari_ini == \"Selasa\"):\n",
+    "    print(\"Saya akan kuliah\")\n",
+    "elif(hari_ini == \"Rabu\"):\n",
+    "    print(\"Saya akan kuliah\")\n",
+    "elif(hari_ini == \"Kamis\"):\n",
+    "    print(\"Saya akan kuliah\")\n",
+    "elif(hari_ini == \"Jumat\"):\n",
+    "    print(\"Saya akan kuliah\")\n",
+    "elif(hari_ini == \"Sabtu\"):\n",
+    "    print(\"Saya akan kuliah\")\n",
+    "elif(hari_ini == \"Minggu\"):\n",
+    "    print(\"Saya akan libur\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "3851a879-6111-43ab-be7c-ce02a8e714a0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Nama Mahasiswa : sabil\n",
+      "====================================================================================================\n",
+      "JANUARI        FEBRUARI       MARET          APRIL          MEI            JUNI           JULI           \n",
+      "----------------------------------------------------------------------------------------------------\n",
+      "BUKA BLOKIR    BLOKIR         BLOKIR         Rp2,400,000    Belum ada pencairanBelum ada pencairanBelum ada pencairan\n",
+      "====================================================================================================\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "# Program Pencairan KIP sabil dari Januari sampai Juli\n",
+    "\n",
+    "nama = \"sabil\"              \n",
+    "\n",
+    "# Data pencairan KIP setiap bulan\n",
+    "januari = \"BUKA BLOKIR\"\n",
+    "februari = \"BLOKIR\"\n",
+    "maret = \"BLOKIR\"\n",
+    "april = 2400000\n",
+    "mei = \"Belum ada pencairan\"\n",
+    "juni = \"Belum ada pencairan\"\n",
+    "juli = \"Belum ada pencairan\"\n",
+    "\n",
+    "# Menampilkan tabel pencairan KIP secara ke samping\n",
+    "print(\"Nama Mahasiswa :\", nama)\n",
+    "print(\"=\" * 100)\n",
+    "print(f\"{'JANUARI':<15}{'FEBRUARI':<15}{'MARET':<15}{'APRIL':<15}{'MEI':<15}{'JUNI':<15}{'JULI':<15}\")\n",
+    "print(\"-\" * 100)\n",
+    "\n",
+    "# Januari\n",
+    "if januari == \"BUKA BLOKIR\":\n",
+    "    print(f\"{januari:<15}\", end=\"\")\n",
+    "else:\n",
+    "    print(f\"{januari:<15}\", end=\"\")\n",
+    "\n",
+    "# Februari\n",
+    "if februari == \"BLOKIR\":\n",
+    "    print(f\"{februari:<15}\", end=\"\")\n",
+    "else:\n",
+    "    print(f\"{februari:<15}\", end=\"\")\n",
+    "\n",
+    "# Maret\n",
+    "if maret == \"BLOKIR\":\n",
+    "    print(f\"{maret:<15}\", end=\"\")\n",
+    "else:\n",
+    "    print(f\"{maret:<15}\", end=\"\")\n",
+    "\n",
+    "# April\n",
+    "if april > 0:\n",
+    "    print(f\"Rp{april:<13,}\", end=\"\")\n",
+    "else:\n",
+    "    print(f\"{'Belum cair':<15}\", end=\"\")\n",
+    "\n",
+    "# Mei\n",
+    "if isinstance(mei, int):\n",
+    "    print(f\"Rp{mei:<13,}\", end=\"\")\n",
+    "else:\n",
+    "    print(f\"{mei:<15}\", end=\"\")\n",
+    "\n",
+    "# Juni\n",
+    "if isinstance(juni, int):\n",
+    "    print(f\"Rp{juni:<13,}\", end=\"\")\n",
+    "else:\n",
+    "    print(f\"{juni:<15}\", end=\"\")\n",
+    "\n",
+    "# Juli\n",
+    "if isinstance(juli, int):\n",
+    "    print(f\"Rp{juli:<13,}\")\n",
+    "else:\n",
+    "    print(f\"{juli:<15}\")\n",
+    "    \n",
+    "print(\"=\" * 100)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "966990bd-897f-4460-bdd1-22adeef3b3ac",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Bulan JANUARI: Akses telah dibuka.\n",
+      "Bulan FEBRUARI: Akses masih diblokir.\n",
+      "Bulan MARET: Akses masih diblokir.\n",
+      "Bulan APRIL: Terjadi transaksi pencairan sebesar Rp 2.400.000\n",
+      "Bulan MEI: belum ada pencairan\n",
+      "Bulan JUNI: belum ada pencairan\n",
+      "Bulan JULI: belum ada pencairan\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 1. Definisikan data baris sabil\n",
+    "\n",
+    "status_sabil = {\n",
+    "    'JANUARI': 'BUKA BLOKIR',\n",
+    "    'FEBRUARI': 'BLOKIR',\n",
+    "    'MARET': 'BLOKIR',\n",
+    "    'APRIL': 2400000,\n",
+    "    'MEI': '',\n",
+    "    'JUNI': '',\n",
+    "    'JULI': ''\n",
+    "}\n",
+    "\n",
+    "# 2. Perulangan dengan logika if-elif-else yang telah diperbaiki\n",
+    "for bulan, nilai in status_sabil.items():\n",
+    "    \n",
+    "    if nilai == 'BUKA BLOKIR':\n",
+    "        print(f\"Bulan {bulan}: Akses telah dibuka.\")\n",
+    "        \n",
+    "    elif nilai == 'BLOKIR':\n",
+    "        print(f\"Bulan {bulan}: Akses masih diblokir.\")\n",
+    "        \n",
+    "    elif isinstance(nilai, (int, float)):\n",
+    "        # Format nominal uang ke gaya Indonesia (contoh: 2.400.000)\n",
+    "        nominal_id = f\"{nilai:,}\".replace(\",\", \".\")\n",
+    "        print(f\"Bulan {bulan}: Terjadi transaksi pencairan sebesar Rp {nominal_id}\")\n",
+    "        \n",
+    "    else:\n",
+    "        # Menangani data kosong sesuai instruksi Anda\n",
+    "        print(f\"Bulan {bulan}: belum ada pencairan\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "a45e3279-6936-450a-ae2a-1ab7ff29381d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "--- ANALISIS STATUS BULANAN ---\n",
+      "Bulan JANUARI: Akses telah dibuka.\n",
+      "Bulan FEBRUARI: Akses masih diblokir.\n",
+      "Bulan MARET: Akses masih diblokir.\n",
+      "Bulan APRIL: Terjadi pencairan sebesar Rp 2.400.000\n",
+      "Bulan MEI: belum ada pencairan\n",
+      "Bulan JUNI: belum ada pencairan\n",
+      "Bulan JULI: belum ada pencairan\n",
+      "--------------------------------------------------\n",
+      "Total Bulan Buka Blokir : 1 bulan\n",
+      "TOTAL DANA YANG CAIR   : Rp 2.400.000\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 1. Representasi data pencairan kip baris sabil\n",
+    "\n",
+    "status_sabil = {\n",
+    "    'JANUARI': 'BUKA BLOKIR',\n",
+    "    'FEBRUARI': 'BLOKIR',\n",
+    "    'MARET': 'BLOKIR',\n",
+    "    'APRIL': 2400000, # Data dari pencairan kumulatif sebelumnya\n",
+    "    'MEI': '',\n",
+    "    'JUNI': '',\n",
+    "    'JULI': ''\n",
+    "}\n",
+    "\n",
+    "# 2. Konstanta tarif berdasarkan catatan algoritma di Excel\n",
+    "TARIF_BUKA_BLOKIR = 800000\n",
+    "\n",
+    "# 3. Variabel penghitung logika algoritma\n",
+    "jumlah_buka_blokir = 0\n",
+    "total_pencairan = 0\n",
+    "\n",
+    "print(\"--- ANALISIS STATUS BULANAN ---\")\n",
+    "\n",
+    "# 4. Jalankan perulangan logika IF-ELIF-ELSE\n",
+    "for bulan, nilai in status_sabil.items():\n",
+    "    \n",
+    "    if nilai == 'BUKA BLOKIR':\n",
+    "        jumlah_buka_blokir += 1\n",
+    "        print(f\"Bulan {bulan}: Akses telah dibuka.\")\n",
+    "        \n",
+    "    elif nilai == 'BLOKIR':\n",
+    "        print(f\"Bulan {bulan}: Akses masih diblokir.\")\n",
+    "        \n",
+    "    elif isinstance(nilai, (int, float)):\n",
+    "        # Algoritma menghitung berdasarkan input langsung nominal di Excel\n",
+    "        total_pencairan += nilai\n",
+    "        nominal_id = f\"{nilai:,}\".replace(\",\", \".\")\n",
+    "        print(f\"Bulan {bulan}: Terjadi pencairan sebesar Rp {nominal_id}\")\n",
+    "        \n",
+    "    else:\n",
+    "        print(f\"Bulan {bulan}: belum ada pencairan\")\n",
+    "\n",
+    "# 5. Output hitungan algoritma total dana yang cair\n",
+    "print(\"-\" * 50)\n",
+    "total_id = f\"{total_pencairan:,}\".replace(\",\", \".\")\n",
+    "print(f\"Total Bulan Buka Blokir : {jumlah_buka_blokir} bulan\")\n",
+    "print(f\"TOTAL DANA YANG CAIR   : Rp {total_id}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d648401b-c270-4b43-8136-97a41b098729",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
