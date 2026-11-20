@@ -1,0 +1,235 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "50d5718f-11ea-4ee5-9124-018c7ae7ebf2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Lulus\n",
+      "0\n",
+      "1\n",
+      "2\n"
+     ]
+    }
+   ],
+   "source": [
+    "nilai = 80\n",
+    "if nilai >= 75:\n",
+    "    print(\"Lulus\")\n",
+    "else:\n",
+    "    print(\"Tidak Lulus\")\n",
+    "\n",
+    "for i in range(3):\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "ab2a5514-eb83-4aba-961e-69b4220fc439",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "8\n"
+     ]
+    }
+   ],
+   "source": [
+    "def tambah(a, b):\n",
+    "    return a + b\n",
+    "\n",
+    "print(tambah(5, 3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "96628ac8-161d-4972-a257-e0c671cf9ff4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Tidak bisa membagi dengan nol!\n"
+     ]
+    }
+   ],
+   "source": [
+    "try:\n",
+    "    x = 10 / 0\n",
+    "except ZeroDivisionError:\n",
+    "    print(\"Tidak bisa membagi dengan nol!\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "5c915376-0654-4289-a6a6-184db43be171",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Bilangan genap: [2, 4, 6, 8, 10]\n",
+      "Jumlah bilangan genap: 5\n",
+      "Bilangan ganjil: [1, 3, 5, 7, 9]\n",
+      "Jumlah bilangan ganjil: 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+    "\n",
+    "genap = []\n",
+    "ganjil = []\n",
+    "\n",
+    "for x in angka:\n",
+    "    if x % 2 == 0:\n",
+    "        genap.append(x)\n",
+    "    else:\n",
+    "        ganjil.append(x)\n",
+    "\n",
+    "print(\"Bilangan genap:\", genap)\n",
+    "print(\"Jumlah bilangan genap:\", len(genap))\n",
+    "\n",
+    "print(\"Bilangan ganjil:\", ganjil)\n",
+    "print(\"Jumlah bilangan ganjil:\", len(ganjil))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "a4b13798-db76-4572-9e72-10bd2508eaa2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Masukkan angka:  10\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10 x 1 = 10\n",
+      "10 x 2 = 20\n",
+      "10 x 3 = 30\n",
+      "10 x 4 = 40\n",
+      "10 x 5 = 50\n",
+      "10 x 6 = 60\n",
+      "10 x 7 = 70\n",
+      "10 x 8 = 80\n",
+      "10 x 9 = 90\n",
+      "10 x 10 = 100\n"
+     ]
+    }
+   ],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "4ce310f5-01ae-48db-98e7-c862a6c06f25",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Masukkan jumlah suku Fibonacci:  20\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 "
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "n = int(input(\"Masukkan jumlah suku Fibonacci: \"))\n",
+    "\n",
+    "a = 0\n",
+    "b = 1\n",
+    "i = 0\n",
+    "\n",
+    "while i < n:\n",
+    "    print(a, end=\" \")\n",
+    "    a, b = b, a + b\n",
+    "    i += 1\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "8d2c8aa7-a36b-4ac1-80f1-bc5062b7bace",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hasil perkalian 1 sampai 100:\n",
+      "93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "hasil = 1\n",
+    "i = 1\n",
+    "\n",
+    "while i <= 100:\n",
+    "    hasil = hasil * i\n",
+    "    i += 1\n",
+    "\n",
+    "print(\"Hasil perkalian 1 sampai 100:\")\n",
+    "print(hasil)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "89fbe095-d095-4dd2-bd7f-5d6b1905f522",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
